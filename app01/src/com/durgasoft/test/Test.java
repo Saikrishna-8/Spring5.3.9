@@ -9,7 +9,8 @@ public class Test {
 
 	public static void main(String[] args) throws Exception {
 
-		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		ApplicationContext context = 
+				new ClassPathXmlApplicationContext("/com/durgasoft/resources/applicationContext.xml");
 
 		HelloBean hb = (HelloBean) context.getBean("helloBean");
 		System.out.println(hb.sayHello());
