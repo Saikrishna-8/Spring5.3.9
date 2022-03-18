@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=app06-Scopes/C:\/Softwares\/SpringFramework\/spring-5.3.9-dist\/spring-framework-5.3.9\/libs\/spring-beans-5.3.9.jar&lt;org.springframework.beans.factory.config(Scope.class[Scope" modifiers="1537" timestamp="1626224908000"/>
+    <typeInfo handle="=app06-Scopes/C:\/Users\/badineedi.krishna\/Downloads\/openjdk-11+28_windows-x64_bin\/jdk-11\/lib\/jrt-fs.jar`jdk.internal.vm.compiler=/module=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/11\/docs\/api\/=/&lt;org.graalvm.compiler.debug(DebugContext$Scope.class[Scope" modifiers="1545" timestamp="1534945684000"/>
+</typeInfoHistroy>

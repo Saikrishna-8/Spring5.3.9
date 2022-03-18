@@ -13,6 +13,7 @@ public class Test {
 				new ClassPathXmlApplicationContext("/com/durgasoft/resources/applicationContext.xml");
 
 		HelloBean hb = (HelloBean) context.getBean("helloBean");
+		//hb.setName("Durga");
 		System.out.println(hb.sayHello());
 
 	}

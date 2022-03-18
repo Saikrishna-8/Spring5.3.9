@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="studentBean" class="com.sai.beans.Student">
+		<property name="name" value="SAI KRISHNA"></property>
+		<property name="age" value="22"></property>
+		<property name="branch" value="CSE"></property>
+		<property name="address" ref="addressBean"></property>
+
+		<property name="skills">
+			<list>
+				<value>C</value>
+				<value>C++</value>
+				<value>Java</value>
+				<value>MYSQL</value>
+			</list>
+		</property>
+
+		<property name="scourses">
+			<set>
+				<value> Core JAVA</value>
+				<value>Adv JAVA</value>
+				<value> Python</value>
+				<value>Spring</value>
+			</set>
+		</property>
+
+		<property name="scourses_faculty">
+
+			<map>
+				<entry key="Core Java" value="Ratan" />
+				<entry key="Python" value="Durga" />
+				<entry key="Spring" value="NagoorBabu" />
+			</map>
+
+		</property>
+
+		<property name="scource_cost">
+
+			<props>
+				<prop key="Java">5000</prop>
+				<prop key="C++">5000</prop>
+				<prop key="DS And ALGO">18500</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="addressBean" class="com.sai.beans.Address">
+		<property name="village" value="Guttikonda"></property>
+		<property name="mandal" value="Piduguralla"></property>
+		<property name="city" value="Guntur"></property>
+		<property name="state" value="Ap"></property>
+		<property name="country" value="India"></property>
+	</bean>
+
+
+</beans>

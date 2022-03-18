@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+	<bean id="course" class="com.sai.beans.Course"/>
+	
+	<bean id="course1" class="com.sai.beans.Course">
+	<constructor-arg value="C-101"></constructor-arg>
+	<constructor-arg value="JAVA"> </constructor-arg>
+	<constructor-arg value="5000"></constructor-arg>
+	</bean>
+	
+	
+	
+	<bean id="course2" class="com.sai.beans.Course">
+	
+	<constructor-arg value="5000" type="int"></constructor-arg>
+	<constructor-arg value="JAVA"> </constructor-arg>
+	<constructor-arg value="C-101"></constructor-arg>
+	
+	</bean>
+	
+	
+	
+	
+	<bean id="course3" class="com.sai.beans.Course">
+	
+	<constructor-arg value="5000" type="int"></constructor-arg>
+	<constructor-arg value="JAVA" index="1"> </constructor-arg>
+	<constructor-arg value="C-101" index="0"></constructor-arg>
+	
+	</bean>
+	
+
+</beans>

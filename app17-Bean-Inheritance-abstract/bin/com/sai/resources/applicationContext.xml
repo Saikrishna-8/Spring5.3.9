@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="wishBean" abstract="true">
+
+		<property name="wish_Message"
+			value="Durga Software Solutions" />
+		<property name="name" value="Anil" />
+
+	</bean>
+
+	<bean id="helloBean" class="com.sai.beans.HelloBean"
+		parent="wishBean">
+
+		<property name="wish_Message" value="Hello " />
+
+	</bean>
+
+	<bean id="welcomeBean" class="com.sai.beans.WelcomeBean"
+		parent="wishBean">
+
+		<property name="wish_Message" value="Welcome " />
+
+	</bean>
+
+</beans>

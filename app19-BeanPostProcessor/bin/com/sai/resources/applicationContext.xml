@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+	<bean id="account" class="com.sai.beans.Account">
+	
+		<property name="accNo" value="abcd1234"/>
+		<property name="accName" value="Badineedi Krishna"/>
+		<!--   <property name="accType" value="Savings"/> -->
+		<property name="accType" value="current"></property>
+		<property name="accMobile" value="9959941828"/>
+		<property name="accEmail" value="sai"/>
+		<property name="accAddr" value="Guttikonda Guntur"></property>
+		
+	</bean>
+	
+	<bean id="accountPostProcessor" class="com.sai.beans.AccountPostProcessor"> </bean>
+</beans>

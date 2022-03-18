@@ -5,7 +5,7 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="helloBean" class="com.durgasoft.beans.HelloBean">  
-        <!-- collaborators and configuration for this bean go here -->
+    	<property name="name" value="Durga"></property>
     </bean>
 
     <!-- more bean definitions go here -->
